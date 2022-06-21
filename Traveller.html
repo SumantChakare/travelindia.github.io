@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Traveller.css">
+	<title>Travel India</title>
+</head>
+<body>
+	<header id="header">
+		<a href="#" class="logo">Travel India</a>
+		<ul>
+			<li><a href="Traveller.html" class="active">Home</a></li>
+			<li><a href="#offer">Offers</a></li>
+			<li><a href="#">Gallery</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</header>
+	
+	<section>
+		<h2 id="text"><span>A New Journey Is</span><br>Waiting</h2>
+		<img src="pics/bird1.png" id="bird1">
+		<img src="pics/bird2.png" id="bird2">
+		<img src="pics/forest.png" id="forest">
+		<a href="#" id="Explor_bnt">Explore</a>
+		<img src="pics/rocks.png" id="rocks">
+		<img src="pics/water.png" id="water">
+	</section>
+	<div id="offer">
+	<div class="sec">
+		<h2>We have the best tours</h2>
+		<div id="scroll">
+			<div id="agra"><img src="pics/agra.jpg"><h1>Agra<span>Days - 3<br>Rs. 3500.00</span></h1><a id="book" href="#scroll">Book Now</a></div>
+			<div id="goa"><img src="pics/goa.jpg"><h1>Goa<span>Days - 7<br>Rs. 8500.00</span></h1><a id="book" href="#scroll">Book Now</a></div>
+			<div id="jaipur"><img src="pics/jaipur.jpg"><h1>Jaipur<span>Days - 4<br>Rs. 4000.00</span></h1><a id="book" href="#scroll">Book Now</a></div>
+			<div id="manali"><img src="pics/manali.jpg"><h1>Manali<span>Days - 5<br>Rs. 7500.00</span></h1><a id="book" href="#scroll">Book Now</a></div>
+		</div>
+	</div>
+	<div id="maldives">
+		<img src="pics/maldives.jpg">
+		<div class="title">
+			<h1>maldives deluxe package</h1>
+			<p>
+				Luxurious stay in comfortable, aesthetically designed and fully sanitized villas with the mesmerizing view to the beach and the ocean
+				A Green Tax of 6 USD per person (per night) is directly payable at the resort.The Gala Dinner cost of USD 50 to USD 100 per person is not included in the package. It’s directly payable at the property and is applicable on the night of 24th and 31st December. Liquor is not allowed at Maafushi Island<br>
+				<span>Days - 5<br>Rs. 85500.00</span><br><br>
+				<a id="book" href="#maldives">Book Now</a>
+			</p>
+		</div>
+	</div>
+	</div>
+	<script type="text/javascript">
+		let text = document.getElementById('text');
+		let bird1 = document.getElementById('bird1');
+		let bird2 = document.getElementById('bird2');
+		let forest = document.getElementById('forest');
+		let explor_bnt = document.getElementById('Explor_bnt');
+		let rocks = document.getElementById('rocks');
+		let water = document.getElementById('water');
+		let header = document.getElementById('header');
+
+		window.addEventListener('scroll',function () {
+			let value = window.scrollY;
+			text.style.top = 50 + value * -0.4 + '%';
+			bird1.style.top = value * -1.5 + 'px';
+			bird1.style.left = value * 2 + 'px';
+			bird2.style.top = value * -1.5 + 'px';
+			bird2.style.left = value * -5 + 'px';
+			explor_bnt.style.marginTop = value * 1.5 + 'px';
+			rocks.style.top = value * -0.12 + 'px';
+			forest.style.top = value * 0.25 + 'px';
+			header.style.top = value * 0.5 + 'px';
+		})
+	</script>
+</body>
+</html>

@@ -10,7 +10,8 @@
 body{
 	overflow-x: hidden;
 	background-color: #fff;
-	min-height: 500vh;
+	min-height: 700vh;
+	scroll-behavior: smooth;
 }
 #header{
 	position: relative;
@@ -97,7 +98,7 @@ section #text span{
 	padding: 8px 30px;
 	color: #000;
 	font-weight: bold;
-	background: linear-gradient(to right, #667eea, #ed6ea0);
+	background-color: #2f80ed;
 	font-size: 20px;
 	font-weight: 500px;
 	border-radius: 40px;
@@ -105,15 +106,16 @@ section #text span{
 	transform: translateY(90px);
 }
 #Explor_bnt:hover{
-	color: #fff;
+	color: #FEFEFE;
+	background-color: #2F88C3;
 }
 #offer{
 	width: 100%;
-	height: 500px;
+	height: 560px;
 }
 .sec{
 	position: absolute;
-	padding: 50px 0px 20px 0px;
+	padding: 50px 0px 0px 0px;
 	width: 100%;
 	background-color: #f8f8ff;
 }
@@ -123,7 +125,7 @@ section #text span{
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 60px;
+	height: 100px;
 	background: linear-gradient(to bottom, #094b65, transparent);
 	z-index: 10;
 }
@@ -165,7 +167,6 @@ section #text span{
 	margin-left: 140px;
 	
 }
-
 #book{
 	background: linear-gradient(to right, #667eea, #2bb673, #ed6ea0, #8E37D7);
 	box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
@@ -198,13 +199,15 @@ section #text span{
 	background-size: 100% 100%;
 	background-attachment: fixed;
 }
+#spcl_offer .maldives_head{
+	position: relative;
+	top: 100px;
+	margin-left: 250px;
+	margin-right: 250px;
+	text-align: center;
+}
 #spcl_offer h1{
 	font-family: georgia;
-	position: relative;
-	left: 280px;
-	top: 100px;
-	width: 440px;
-	height: 60px;
 	padding: 10px;
 	border: 3px solid black;
 	border-radius: 10px;
@@ -221,5 +224,118 @@ section #text span{
 	color: #fff;
 	text-align: center;
 }
+#gallery{
+	position: relative; 
+	width: 100%;
+	height: 1450px;
+	overflow: hidden;
+}
+#gallery .galry_head{
+	position: relative;
+	margin-left: 80px;
+	background-color: ghostwhite;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	
+}
+#gallery .galry_head h3{
+	font-family: georgia;
+	font-size: 25px;
+	background-color: greenyellow;
+	width: 200px;
+	padding: 10px;
+	border: 3px solid black;
+}
+#gallery .slidebox{
+	height: 550px;
+	background-color: #E1AECE;
+}
+#gallery .slideshow-container {
+	max-width: 80%;
+	position: relative;
+	margin: auto;
+}
+#gallery .slideshow-container img{
+	width: 100%;
+	margin-top: 20px;
+	height: 500px;
+	border: 10px solid black;
+}
+.dot {
+	display: none;
+}
+.active {
+	background-color: #717171;
+}
+.fade {
+	animation-name: fade;
+ 	animation-duration: 2s;
+}
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+#glry_view{
+	position: absolute; 
+	width: 100%;
+}
+#glry_view .disp_container{
+	position: relative;
+	width: 100%;
+}
+#glry_view .disp_container .disp_grid{
+	margin-left: 65px;
+	margin-right: 65px;
+	border: 2px solid black;
+}
+#glry_view .disp_container{
+	padding: 20px;
+	width: 100%;
+	height: 700px;
+	display: inline-block;
 
-
+}
+#glry_view .disp_container img{
+	max-width: 500px;
+	max-height: 500px;
+	padding: 10px;
+}
+#about_us{
+	position: absolute;
+	width: 100%;
+	height: 800px;
+	overflow: hidden;
+}
+#about_us .abt_head{
+	position: relative;
+	margin-left: 80px;
+	background-color: ghostwhite;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+#about_us .abt_head h3{
+	font-family: georgia;
+	font-size: 25px;
+	background-color: greenyellow;
+	width: 200px;
+	padding: 10px;
+	border: 3px solid black;
+}
+#about_us .abt_content{
+	display: flex;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+#about_us .abt_content img{
+	width: 500px;
+	height: 500px;
+	border-bottom: 3px solid blueviolet;
+}
+#about_us .abt_content .abt_info{
+	padding: 15px;
+	border-left: 2px solid blueviolet;
+	text-align: justify;
+}
+#about_us .abt_content .abt_info h3{
+	
+}

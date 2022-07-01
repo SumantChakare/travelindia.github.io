@@ -7,6 +7,7 @@
 	<title>Best Online Travel Page in India | TravelIndia.com</title>
 </head>
 <body>
+	<div id="home"></div>
 	<header id="header">
 		<div id="logo"><img src="pics/logo.png"></div>
 		<ul>
@@ -14,10 +15,9 @@
 			<li><a href="#offer">Offers</a></li>
 			<li><a href="#gallery">Gallery</a></li>
 			<li><a href="#about_us">About Us</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</header>
-	
 	<section>
 		<h2 id="text"><span>A New Journey Is</span><br>Waiting</h2>
 		<img src="pics/bird1.png" id="bird1">
@@ -37,8 +37,9 @@
 				<div id="manali"><img src="pics/manali.jpg"><h1>Manali<span>Days - 5<br>Rs. 13500.00</span></h1><a id="book" href="#scroll">Book Now</a></div>
 				<div id="mumbai"><img src="pics/mumbai.jpg"><h1>Mumbai<span>Days - 5<br>Rs. 10500.00</span></h1><a id="book" href="#scroll">Book Now</a></div>
 			</div>
-		</div>
+		</div>	
 	</div>
+	<button onclick="topFunction()" id="srl_up" title="Go to top">Scroll Up</button>
 	<div id="spcl_offer">
 		<div class="maldives_head"><h1>maldives deluxe package</h1></div>
 		<div id="maldives">
@@ -51,7 +52,8 @@
 		</div>
 	</div>
 	<div id="gallery">
-		<div class="galry_head"><h3>Gallery</h3></div>
+		<hr>
+		<div class="galry_head"><h3>Gallery</h3></div><hr>
 		<div class="slidebox">
 		<div class="slideshow-container">
 			<div class="mySlides fade">
@@ -96,24 +98,62 @@
 	</div>
 	</div>
 	<div id="about_us">
-		<div class="abt_head"><h3>About Us</h3></div>
+		<hr>
+		<div class="abt_head"><h3>About Us</h3></div><hr>
 		<div class="abt_content">
 			<div class="abt_img"><img src="pics/intro.png"></div>
 			<div class="abt_info">
-			<h3>WE HAVE THE BEST TOURS</h3>
+			<h3>We Have The Best Tours</h3>
 			<p>
 				Interesting and Intriguing, India offers incredible holiday experiences through its cultural, topography, and wildlife diversity. With these amazing and unique experiences, this south Asian country conveniently finds its way into the world tourism map as one of the finest destinations for a holistic vacation.
 			</p><br>
 			<p>
 				India establishes its identity as the country of architectural masterpieces, making it an ideal travel destination to plan a heritage tour in the world. While Taj Mahal makes for the major draw on an India tour, there are a plethora of monuments and edifices in every India travel guide displaying the fine architecture and grandiose of different eras in the country.
 			</p><br>
-			<p>
-				The diverse Indian topography adorned with the impressive Himalayas; long stretches of coastline; expansive hot, cold and white salt deserts; dense forests; alpine meadows and lakes; and scenic waterfalls pique the tourists’ interest.
-			</p>
+			<a id="book" href="#">Read More..</a>
 			</div>
 		</div>
+		<h2>Plan The Perfect Holiday...</h2>
 	</div>
-
+	<div id="contact">
+		<hr>
+		<div class="cnt_head"><h3>Contact</h3></div><hr>
+		<div class="cnt_content">
+		<div class="cnt_form">
+			<form>
+		        <label for="fname">First Name</label>
+		        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+		        <label for="lname">Last Name</label>
+		        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+		        <label for="country">Country</label>
+		        <select id="country" name="country">
+		          <option value="australia">Australia</option>
+		          <option value="canada">Canada</option>
+		          <option value="usa">USA</option>
+		        </select>
+		        <label for="subject">Subject</label>
+		        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+		        <input type="submit" value="Submit">
+      		</form>
+		</div>
+		<div class="cnt_info">
+			<div class="call"><img src="pics/phone.png">TollFree Number<br></div>
+			<div class="info"><span>1800 123 5555<br>Available Monday to Saturday 10 AM - 7 PM</span>
+			</div><br>
+			<div class="mail"><img src="pics/mail.webp">Customer Email ID<br></div>
+			<div class="info"><span>customercare@travelindia.com</span>
+			</div><br>
+			<div class="adrs"><img src="pics/location.png">Office<br></div>
+			<div class="info"><span>Travel India Private Limited<br>
+				Plot No -29 , 3rd & 4th Floor Dynamic House, Maruti Industrial Complex Sector 18,
+				Mumbai</span>
+			</div><br>
+		</div>
+		</div>
+		<div>
+			<marquee>Made within <img src="pics/heart.png"> India. All rights reserved ©2022</marquee>
+		</div>
+	</div>
 
 </body>
 <script type="text/javascript" src="Traveller.js"></script>
